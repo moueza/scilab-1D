@@ -20,8 +20,8 @@ function [y]=interpol2val(listXY,targetX)
     pente=(tablo(2,2)-tablo(2,1))/(tablo(1,2)-tablo(1,1))
     y=tablo(2,1)+(targetX-tablo(1,1))*pente
 endfunction
-//test tablo=[[0 10];[0 1]]; interpol2val(tablo,3) -> .3
-//test  listXY=[0 1 2; 0 1 0]; targetX=[-1 0 1 2 3]; interpol2val(listXY,targetX)
+  //TODO linear functions, regressions, least-squares, TIMES series
+//test  listXY=[0 1 2; 0 1 0]; targetX=[-1 0 1 2 3]; interpol2val(listXY,targetX) 0 because no aline at x=-1
 //test  listXY=[0 1 2; 0 1 0]; targetX=[-1 0 1 2 3]; interpol2val(listXY,1)
 //test  listXY=[0 1 2; 0 1 0]; targetX=[-1 0 1 2 3]; interpol2val(listXY,-1)
 
